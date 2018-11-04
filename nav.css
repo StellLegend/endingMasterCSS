@@ -59,7 +59,7 @@
     content: '\25bc';
     padding-left: 0.2em; 
 }
-.menu-components .list-menu li:hover {
+.menu-components .list-menu li:nth-last-child(n+2):hover {
     background: #1b98e0;
 }
 .menu-components .list-menu .arrow {
@@ -88,7 +88,10 @@
     background: #333;
     padding: 10px;
 }
-.menu-components .search-in-menu img{
+.menu-components .search-in-menu i{
     width: 1em;
     height: 1em;
+}
+.menu-components .search-in-menu:hover i{
+    color: #1b98e0;
 }
