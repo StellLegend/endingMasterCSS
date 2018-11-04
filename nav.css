@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.line-linear {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 0;
+    background-image: linear-gradient(to right,#f76570 0%,#f76570 8%,#f3a46b 8%,#f3a46b 16%,#f3a46b 16%,#ffd205 16%,#ffd205 24%,#ffd205 24%,#1bbc9b 24%,#1bbc9b 25%,#1bbc9b 32%,#14b9d5 32%,#14b9d5 40%,#c377e4 40%,#c377e4 48%,#f76570 48%,#f76570 56%,#f3a46b 56%,#f3a46b 64%,#ffd205 64%,#ffd205 72%,#1bbc9b 72%,#1bbc9b 80%,#14b9d5 80%,#14b9d5 80%,#14b9d5 89%,#c377e4 89%,#c377e4 100%);
+}
+.navi-container {
+    width: 100%;
+    background-color: rgb(31, 32, 36);
+    display: flex;
+    justify-content: center;
+}
+.main-navi {
+    width: 91%;
+    font-size: 13px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-navi .header-logo img{
+    height: 50px;
+}
+.menu-components {
+    height: 100%;
+}
+.menu-components .list-menu {
+    list-style: none;
+    font-weight: 600;
+    display: flex;
+    height: 100%;
+}
+.menu-components .list-menu .header-home:first-child {
+    background-color: #1b98e0;
+    position: relative;
+}
+.menu-components .list-menu .header-home a{
+    text-decoration: none;
+}
+.menu-components .list-menu .header-home::after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: rgb(31, 32, 36);
+    position: absolute;
+    left: 39%;
+    top: 65%;
+}
+.menu-components .list-menu li {
+    padding: 25px 14px;
+}
+.arrow::after {
+    content: '\25bc';
+    padding-left: 0.2em; 
+}
+.menu-components .list-menu li:hover {
+    background: #1b98e0;
+}
+.menu-components .list-menu .arrow {
+    position: relative;
+    transition: all 0.2s;
+}
+.menu-components .list-menu .arrow:hover .sub-menu {
+    display: block;
+}
+.menu-components .list-menu .sub-menu {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 100%;
+    display: none;
+    list-style: none;
+    background: #1f2024;
+    border-top: 2px solid #1b98e0;
+}
+.menu-components .list-menu .sub-menu li {
+    padding: 10px;
+    font-weight: 300;
+    border-bottom: 1px solid #333;
+}
+.menu-components .list-menu .sub-menu li:hover {
+    background: #333;
+    padding: 10px;
+}
+.menu-components .search-in-menu img{
+    width: 1em;
+    height: 1em;
+}
