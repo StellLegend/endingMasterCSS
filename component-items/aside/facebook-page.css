@@ -1,0 +1,65 @@
+.left-aside {
+  width: 360px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  --border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+.left-aside .facebook-like-box, .tag-post {
+  width: 90%;
+  border: 1px solid #ddd;
+  padding: 30px 30px 60px 30px;
+  margin-bottom: 30px;
+}
+.left-aside .facebook-like-box span {
+  position:relative;
+ padding-top:56.25%;
+}
+.left-aside .facebook-like-box iframe {
+  width: 500px;
+  height: 500px;
+  visibility: visible;
+}
+.out-line-title {
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+  position: relative;
+  margin-bottom: 30px;
+}
+.out-line-title h4 {
+  margin: 8px 0 10px 0;
+  font-size: 17px;
+  font-family: "Roboto Slab";
+}
+.out-line-title::before {
+  content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid black;
+    border-right: 5px solid transparent;
+    position: absolute;
+    bottom: -7px;
+}
+.out-line-title::after {
+  content: "";
+    width: 40px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -2px;
+}
+.tag-post .content-tag-post p{
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 6px 10px;
+  margin: 3px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.03);
+  font-size: 12px;
+  line-height: 14px;
+}
+.hover-blue:hover {
+  transition: 0.15s;
+   color: #1B98E0;
+}
